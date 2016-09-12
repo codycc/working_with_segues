@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		0BDD2B611D8728D000DF8BBF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BDD2B601D8728D000DF8BBF /* AppDelegate.swift */; };
-		0BDD2B631D8728D000DF8BBF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BDD2B621D8728D000DF8BBF /* ViewController.swift */; };
+		0BDD2B631D8728D000DF8BBF /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BDD2B621D8728D000DF8BBF /* LoginVC.swift */; };
 		0BDD2B661D8728D000DF8BBF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BDD2B641D8728D000DF8BBF /* Main.storyboard */; };
 		0BDD2B681D8728D000DF8BBF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0BDD2B671D8728D000DF8BBF /* Assets.xcassets */; };
 		0BDD2B6B1D8728D000DF8BBF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BDD2B691D8728D000DF8BBF /* LaunchScreen.storyboard */; };
 		0BDD2B761D8728D000DF8BBF /* SwappingScreens2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BDD2B751D8728D000DF8BBF /* SwappingScreens2Tests.swift */; };
 		0BDD2B811D8728D000DF8BBF /* SwappingScreens2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BDD2B801D8728D000DF8BBF /* SwappingScreens2UITests.swift */; };
+		0BDD2B8F1D8729D100DF8BBF /* MusicListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BDD2B8E1D8729D100DF8BBF /* MusicListVC.swift */; };
+		0BDD2B911D87329C00DF8BBF /* PlaySongVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BDD2B901D87329C00DF8BBF /* PlaySongVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +38,7 @@
 /* Begin PBXFileReference section */
 		0BDD2B5D1D8728D000DF8BBF /* SwappingScreens2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwappingScreens2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BDD2B601D8728D000DF8BBF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0BDD2B621D8728D000DF8BBF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0BDD2B621D8728D000DF8BBF /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		0BDD2B651D8728D000DF8BBF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0BDD2B671D8728D000DF8BBF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0BDD2B6A1D8728D000DF8BBF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +49,8 @@
 		0BDD2B7C1D8728D000DF8BBF /* SwappingScreens2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwappingScreens2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BDD2B801D8728D000DF8BBF /* SwappingScreens2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwappingScreens2UITests.swift; sourceTree = "<group>"; };
 		0BDD2B821D8728D000DF8BBF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0BDD2B8E1D8729D100DF8BBF /* MusicListVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicListVC.swift; sourceTree = "<group>"; };
+		0BDD2B901D87329C00DF8BBF /* PlaySongVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaySongVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,11 +102,13 @@
 			isa = PBXGroup;
 			children = (
 				0BDD2B601D8728D000DF8BBF /* AppDelegate.swift */,
-				0BDD2B621D8728D000DF8BBF /* ViewController.swift */,
+				0BDD2B621D8728D000DF8BBF /* LoginVC.swift */,
 				0BDD2B641D8728D000DF8BBF /* Main.storyboard */,
 				0BDD2B671D8728D000DF8BBF /* Assets.xcassets */,
 				0BDD2B691D8728D000DF8BBF /* LaunchScreen.storyboard */,
 				0BDD2B6C1D8728D000DF8BBF /* Info.plist */,
+				0BDD2B8E1D8729D100DF8BBF /* MusicListVC.swift */,
+				0BDD2B901D87329C00DF8BBF /* PlaySongVC.swift */,
 			);
 			path = SwappingScreens2;
 			sourceTree = "<group>";
@@ -259,7 +265,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0BDD2B631D8728D000DF8BBF /* ViewController.swift in Sources */,
+				0BDD2B8F1D8729D100DF8BBF /* MusicListVC.swift in Sources */,
+				0BDD2B911D87329C00DF8BBF /* PlaySongVC.swift in Sources */,
+				0BDD2B631D8728D000DF8BBF /* LoginVC.swift in Sources */,
 				0BDD2B611D8728D000DF8BBF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
